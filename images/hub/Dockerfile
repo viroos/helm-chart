@@ -34,6 +34,6 @@ WORKDIR /srv/jupyterhub
 
 # JupyterHub API port
 EXPOSE 8081
-RUN pip3 install --no-cache-dir  jupyterhub-hashauthenticator
+RUN pip3 install --no-cache-dir  jupyterhub-ldapauthenticator
 
 CMD jupyterhub --config /srv/jupyterhub_config.py --no-ssl
